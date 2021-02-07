@@ -172,9 +172,6 @@ public class FilesFinder implements SearchFiles {
             newMap.put(uniqueFileHash, identicalList);
         }
 
-//        List<String> fileDuplicates = filterSingleValuesInHashMap(newMap);
-
-//        return fileDuplicates;
         return filterSingleValuesInHashMap(newMap);
     }
 
