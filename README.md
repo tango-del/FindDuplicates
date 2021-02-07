@@ -1,5 +1,6 @@
 # FindDuplicates
 
+Require Java minimum version - 1.8
 The program accepts a directory as an argument, if there is no argument, then use directory where the executable file will be located is used.
 
 - Analyzes on which operating system was launched :  Windows / Linux / MacOs
