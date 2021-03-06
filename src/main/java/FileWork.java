@@ -4,6 +4,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.FileSystems;
 
 public class FileWork implements FileInterface {
     private static BufferedWriter writer;
@@ -21,7 +22,10 @@ public class FileWork implements FileInterface {
     public void createFileResultTxt(File directory) throws IOException {
         String resultTxt = "result.txt";
 
-        fileResult = new File(directory, resultTxt);
+        File file = new File(FileSystems.getDefault().getPath("").toAbsolutePath().toString());
+
+//        fileResult = new File(directory, resultTxt);
+        fileResult = new File(file, resultTxt);
 
         if (!fileResult.exists()) {
             fileResult.createNewFile();
