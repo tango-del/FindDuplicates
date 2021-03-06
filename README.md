@@ -1,6 +1,6 @@
 # FindDuplicates
 
-The program accepts a directory as an argument, if there is no argument, then use directory where the executable file will be located is used.
+Require Java minimum version - 1.8. Program accepts a directory as an argument, if there is no argument, then use directory where the executable file will be located is used.
 
 - Analyzes on which operating system was launched :  Windows / Linux / MacOs
 - Goes through the specified directory and to all subdirectories inside. Those files are skipped that are hidden, unreadable and there is no access to them, as well as that their names do not contains names specified in the configuration files of the corresponding OS
